@@ -1,0 +1,7 @@
+function accum(s) {
+  let str = ""
+  for(let i = 0; i < s.length; i++) {
+    str += s.charAt(i).toUpperCase() + s.charAt(i).toLowerCase().repeat(i) + "-";
+  }
+  return str.substring(0,str.length-1);
+}
